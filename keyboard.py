@@ -6,9 +6,9 @@ from tkinter import simpledialog
 
 root = tk.Tk()
 root.withdraw() 
-text = simpledialog.askstring("텍스트 입력", "입력할 텍스트를 입력하세요:")
+text = simpledialog.askstring("Input Text", "Type in your text:")
 
-print("5초 후 입력이 시작됩니다. 원하는 문서를 클릭하세요.")
+print("click your docs, typing will start in 5 seconds.")
 time.sleep(5)
 
 #pyautogui.typewrite(text, interval=0.1)
