@@ -1,0 +1,14 @@
+# venv
+venv/
+env/
+path/to/venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
