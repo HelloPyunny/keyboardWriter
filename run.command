@@ -1,14 +1,14 @@
 #!/bin/zsh
 cd "$(dirname "$0")"
 
-# 파이썬3 확인 및 설치 안내
+# Check for Python3 and show install guide if missing
 if ! command -v python3 &> /dev/null; then
-  echo "Python3가 설치되어 있지 않습니다. https://www.python.org/downloads/ 에서 설치하세요."
+  echo "Python3 is not installed. Please install it from https://www.python.org/downloads/"
   exit 1
 fi
 
-# pyautogui 등 의존성 설치
+# Install dependencies (pyautogui, etc.)
 pip3 install --user -r requirements.txt
 
-# 프로그램 실행
+# Run the program
 python3 keyboard.py
